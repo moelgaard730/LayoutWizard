@@ -394,9 +394,5 @@ class LayoutData(object):
         self.__userDataBoundingBoxY = self.__paperY - self.__userDataBoundingBoxDeltaY - self.__userDataBoundingBoxH
         self.__userNameX = self.__userNameDeltaX + self.__userDataBoundingBoxX
         self.__userNameY = self.__userNameDeltaY + self.__userDataBoundingBoxY
-        
-        print 'Papir sat til:' + self.__layoutPaperType
-        print 'Papir X/Y:' + str(self.__paperX) + '/' + str(self.__paperY)
-        print 'firmabox X/Y:' + str(self.__firmDataBoundingBoxX) + '/' + str(self.__firmDataBoundingBoxY)
-    
+            
     
