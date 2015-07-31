@@ -134,4 +134,3 @@ class MainClassDialog(QtGui.QDialog, FORM_CLASS):
     def pickLogoFile(self):
         self.__layoutData.logoPath = QFileDialog.getOpenFileName(self, u'Vælg en billedfil')
         self.txtBxFirmLogo.setText(self.__layoutData.logoPath)
-        print u'Filen der blev valgt:' +  self.__layoutData.logoPath
