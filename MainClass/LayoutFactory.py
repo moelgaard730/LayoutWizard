@@ -4,9 +4,6 @@ Created on 11/07/2015
 
 @author: DQ21989
 '''
-from qgis.core import *
-from qgis.gui import *
-from PyQt4.Qt import QFont, QPointF
 from MainClass.LayoutItem import LayoutItem
 class LayoutFactory(object):
     '''
