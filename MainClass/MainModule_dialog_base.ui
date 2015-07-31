@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainClassDialogBase</class>
+ <widget class="QDialog" name="MainClassDialogBase">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>611</width>
+    <height>378</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>LayoutWizard</string>
+  </property>
+  <widget class="QPushButton" name="btnOK">
+   <property name="geometry">
+    <rect>
+     <x>500</x>
+     <y>340</y>
+     <width>93</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>OK</string>
+   </property>
+  </widget>
+  <widget class="QTabWidget" name="tabWidget">
+   <property name="geometry">
+    <rect>
+     <x>11</x>
+     <y>11</y>
+     <width>581</width>
+     <height>321</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <widget class="QWidget" name="tabData">
+    <attribute name="title">
+     <string>Data</string>
+    </attribute>
+    <widget class="QLabel" name="lblTextFirmName">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>12</y>
+       <width>81</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Firma navn</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="txtBxFirmDepartment">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>40</y>
+       <width>181</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblTxtFirmDepartment">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>42</y>
+       <width>111</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Firma afdeling</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="cmbBxPaper">
+     <property name="geometry">
+      <rect>
+       <x>390</x>
+       <y>10</y>
+       <width>111</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblTxtFirmAddress">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>72</y>
+       <width>111</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Firma adresse</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="txtBxFirmAddress">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>70</y>
+       <width>181</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblTxtFirmPostCode">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>102</y>
+       <width>111</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Firma postnummer</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="txtBxFirmPostCode">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>100</y>
+       <width>181</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblTxtFirmCity">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>132</y>
+       <width>111</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Firma by</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="txtBxFirmCity">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>130</y>
+       <width>181</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblTxtFirmPhone">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>162</y>
+       <width>111</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Firma tlf</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="txtBxFirmPhone">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>160</y>
+       <width>181</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="rdoBtnPortrait">
+     <property name="geometry">
+      <rect>
+       <x>390</x>
+       <y>50</y>
+       <width>95</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Portræt</string>
+     </property>
+     <attribute name="buttonGroup">
+      <string notr="true">portraitLanscapeBtnGrp</string>
+     </attribute>
+    </widget>
+    <widget class="QRadioButton" name="rdoBtnLandscape">
+     <property name="geometry">
+      <rect>
+       <x>390</x>
+       <y>80</y>
+       <width>95</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Landskab</string>
+     </property>
+     <attribute name="buttonGroup">
+      <string notr="true">portraitLanscapeBtnGrp</string>
+     </attribute>
+    </widget>
+    <widget class="QLineEdit" name="txtBxFirmName">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>10</y>
+       <width>181</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblTxtFirmWebpage">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>192</y>
+       <width>111</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Firma webside</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="txtBxFirmWebpage">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>190</y>
+       <width>181</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblTxtFirmMail">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>222</y>
+       <width>111</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Firma mail</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="txtBxFirmMail">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>220</y>
+       <width>181</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblTxtFirmLogo">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>250</y>
+       <width>111</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Firma logo</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="txtBxFirmLogo">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>250</y>
+       <width>181</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLineEdit{background:rgb(240, 240, 240)}</string>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnLogoFilepicker">
+     <property name="geometry">
+      <rect>
+       <x>350</x>
+       <y>250</y>
+       <width>93</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>...</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="txtBxLayoutName">
+     <property name="geometry">
+      <rect>
+       <x>390</x>
+       <y>130</y>
+       <width>113</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblTxtLayoutName">
+     <property name="geometry">
+      <rect>
+       <x>390</x>
+       <y>110</y>
+       <width>111</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Layout navn</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tabSetup">
+    <attribute name="title">
+     <string>Setup</string>
+    </attribute>
+    <widget class="QFontComboBox" name="fontCmbBxHeader">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>9</y>
+       <width>221</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblHeaderFontName">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>11</y>
+       <width>81</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Overskrift font</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblTextFontName">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>51</y>
+       <width>55</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Tekst font</string>
+     </property>
+    </widget>
+    <widget class="QFontComboBox" name="fontCmbBxText">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>49</y>
+       <width>223</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QSpinBox" name="spinBoxHeaderFontSize">
+     <property name="geometry">
+      <rect>
+       <x>350</x>
+       <y>10</y>
+       <width>46</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="value">
+      <number>9</number>
+     </property>
+    </widget>
+    <widget class="QSpinBox" name="spinBoxTextFontSize">
+     <property name="geometry">
+      <rect>
+       <x>350</x>
+       <y>50</y>
+       <width>46</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="value">
+      <number>12</number>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>tabWidget</tabstop>
+  <tabstop>txtBxFirmName</tabstop>
+  <tabstop>txtBxFirmDepartment</tabstop>
+  <tabstop>txtBxFirmAddress</tabstop>
+  <tabstop>txtBxFirmPostCode</tabstop>
+  <tabstop>txtBxFirmCity</tabstop>
+  <tabstop>txtBxFirmPhone</tabstop>
+  <tabstop>txtBxFirmWebpage</tabstop>
+  <tabstop>txtBxFirmMail</tabstop>
+  <tabstop>txtBxFirmLogo</tabstop>
+  <tabstop>btnLogoFilepicker</tabstop>
+  <tabstop>cmbBxPaper</tabstop>
+  <tabstop>rdoBtnPortrait</tabstop>
+  <tabstop>rdoBtnLandscape</tabstop>
+  <tabstop>btnOK</tabstop>
+  <tabstop>fontCmbBxHeader</tabstop>
+  <tabstop>fontCmbBxText</tabstop>
+  <tabstop>spinBoxHeaderFontSize</tabstop>
+  <tabstop>spinBoxTextFontSize</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+ <designerdata>
+  <property name="gridDeltaX">
+   <number>10</number>
+  </property>
+  <property name="gridDeltaY">
+   <number>10</number>
+  </property>
+  <property name="gridSnapX">
+   <bool>true</bool>
+  </property>
+  <property name="gridSnapY">
+   <bool>true</bool>
+  </property>
+  <property name="gridVisible">
+   <bool>true</bool>
+  </property>
+ </designerdata>
+ <buttongroups>
+  <buttongroup name="portraitLanscapeBtnGrp"/>
+ </buttongroups>
+</ui>
